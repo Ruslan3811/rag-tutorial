@@ -3,7 +3,7 @@
 Учебный RAG на текстовых описаниях: TF-IDF + demo-ответ с источниками.  
 Pipeline: данные → чанки → индекс → поиск → ответ.
 
-**Документы разработки:** [doc/README.md](doc/README.md) · **Данные:** [doc/DATA.md](doc/DATA.md) · **План:** [doc/tasklist.md](doc/tasklist.md) · **Домашнее задание:** [homework/README.md](homework/README.md) · **Kaggle:** [Consumer Complaint Database](https://www.kaggle.com/datasets/datasnaek/consumer-complaint-database)
+**Документы разработки:** [doc/tasklist.md](doc/tasklist.md) · **Данные:** [doc/DATA.md](doc/DATA.md) · **Домашнее задание:** [homework/README.md](homework/README.md) · **Kaggle:** [Consumer Complaint Database](https://www.kaggle.com/datasets/datasnaek/consumer-complaint-database)
 
 ## Требования
 
