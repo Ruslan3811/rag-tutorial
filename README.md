@@ -8,7 +8,7 @@
 uv sync
 uv run python scripts/build_index.py
 uv run streamlit run app/main.py
-Данные
+```Данные
 
 Источник: Русская Википедия
 Объем: 1297 документов (1617 чанков)
