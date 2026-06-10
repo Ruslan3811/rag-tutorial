@@ -27,13 +27,13 @@ uv run streamlit run app/main.py
 ## Скриншоты работы
 
 ### Поиск "Космос"
-![Космос](screenshots/kosmos.png)
+![Космос](screenshots/1.png)
 
 ### Поиск "Животные"
-![Животные](screenshots/zhivotnye.png)
+![Животные](screenshots/2.png)
 
 ### Поиск "Наука"
-![Наука](screenshots/nauka.png)
+![Наука](screenshots/3.png)
 
 ### Negative-запрос "Как приготовить борщ?" (отказ)
-![Отказ](screenshots/negative.png)
+![Отказ](screenshots/4.png)
