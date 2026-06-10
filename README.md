@@ -35,5 +35,5 @@ uv run streamlit run app/main.py
 ### Поиск "Наука"
 ![Наука](screenshots/3.png)
 
-### Negative-запрос "Как приготовить борщ?" (отказ)
+### Negative-запрос "Шоколадка" (отказ)
 ![Отказ](screenshots/4.png)
