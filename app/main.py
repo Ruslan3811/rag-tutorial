@@ -8,9 +8,9 @@ from app.prompts import MIN_SCORE
 from app.retriever import Retriever
 
 DEMO_QUESTIONS = [
-    "Ипотека - закрытие ипотечной сделки",
-    "Какие переменные в датасете про безработицу?",
-    "За какой период данные об инфляции?",
+    "Космос",
+    "Животные",
+    "Наука",
     "Как приготовить борщ?",
 ]
 
@@ -24,8 +24,20 @@ def load_retriever() -> Retriever:
     return Retriever()
 
 
+def _get_score_emoji(score: float) -> str:
+    """Возвращает эмодзи в зависимости от оценки релевантности."""
+    if score >= 0.3:
+        return "🟢"
+    elif score >= 0.15:
+        return "🟡"
+    else:
+        return "🔴"
+
+
 def render_chunk(i: int, src: dict, expanded: bool = True) -> None:
-    label = f"[{i}] doc_id={src['doc_id']} · score={src['score']:.4f}"
+    score = src['score']
+    emoji = _get_score_emoji(score)
+    label = f"{emoji} [{i}] doc_id={src['doc_id']} · score={score:.4f}"
     with st.expander(label, expanded=expanded):
         st.markdown(f"**{src['name']}**")
         st.text(src["text"])
